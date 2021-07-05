@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SECRET_PATH = exports.SECRET_ENC_PATH = exports.IV_PATH = exports.AUTH_PATH = exports.KEY_PATH = exports.PROJECT_ROOT_PATH = void 0;
+const path_1 = require("path");
+exports.PROJECT_ROOT_PATH = path_1.join(__dirname, "..", "..");
+exports.KEY_PATH = path_1.join(exports.PROJECT_ROOT_PATH, "secret.key");
+exports.AUTH_PATH = path_1.join(exports.PROJECT_ROOT_PATH, "auth.txt");
+exports.IV_PATH = path_1.join(exports.PROJECT_ROOT_PATH, "iv.txt");
+exports.SECRET_ENC_PATH = path_1.join(exports.PROJECT_ROOT_PATH, "secret.enc");
+exports.SECRET_PATH = path_1.join(exports.PROJECT_ROOT_PATH, "secret.txt");
